@@ -135,10 +135,10 @@ const Skillsdata = () => {
   return (
     <>
       <Navbar />
-      <div className="px-4 py-2 text-slate-50 my-9 bg-black ">
+      <div className="px-4 py-2 text-slate-50 my-9 bg-black w-[60%] mx-auto">
         {skilldataInfo.map((e, ind) =>
           e.id == urldata.pathname.split("/")[2] ? (
-            <div key={e.id} className="flex flex-col gap-4 items-center">
+            <div key={e.id} className="flex flex-col gap-4">
               <h1 className="text-3xl text-slate-50 font-semibold xl:text-4xl">
                 {e.name}
               </h1>

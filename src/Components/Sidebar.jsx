@@ -9,7 +9,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
         Siderbarvisible ? "left-[0%] z-10 fixed" : "left-[-110%]"
       }`}
     >
-      <div className="bg-slate-950 px-4 py-3 flex justify-center items-center">
+      <div className="px-4 py-3 flex justify-center items-center">
         <div className="flex justify-between items-center w-full border-b border-[#dadada] pb-6">
           <h1 className="text-slate-50 text-4xl font-semibold">Yuvraj</h1>
           <p
@@ -20,13 +20,14 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
           </p>
         </div>
       </div>
-      <ul className="flex px-[1.2rem] sm:flex-row w-full min-h-[300px] flex-col text-slate-50 justify-between items-start text-lg">
+      <ul className="flex px-[1.2rem] sm:flex-row w-full min-h-[300px] flex-col text-slate-50 justify-between items-start text-[22px]">
         <li>
           <NavLink
             to="/"
             className={(e) => {
               return e.isActive ? "text-red-600" : " ";
             }}
+            onClick={() => setSiderbar(!Siderbarvisible)}
           >
             Home
           </NavLink>
@@ -37,6 +38,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
             className={(e) => {
               return e.isActive ? "text-red-600" : " ";
             }}
+            onClick={() => setSiderbar(!Siderbarvisible)}
           >
             About Me
           </NavLink>
@@ -47,6 +49,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
             className={(e) => {
               return e.isActive ? "text-red-600" : " ";
             }}
+            onClick={() => setSiderbar(!Siderbarvisible)}
           >
             Projects
           </NavLink>
@@ -57,6 +60,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
             className={(e) => {
               return e.isActive ? "text-red-600" : " ";
             }}
+            onClick={() => setSiderbar(!Siderbarvisible)}
           >
             Contact
           </NavLink>
@@ -67,15 +71,18 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
             className={(e) => {
               return e.isActive ? "text-red-600" : " ";
             }}
+            onClick={() => setSiderbar(!Siderbarvisible)}
           >
             Skills
           </NavLink>
         </li>
         <button
+          onClick={() => setSiderbar(!Siderbarvisible)}
           className="border border-[#dadada] rounded px-4 py-2 transition-all hover:bg-slate-50 hover:text-red-600 duration-700"
-          download
         >
-          <Link to="">Resume/CV</Link>
+          <Link to="https://drive.google.com/file/d/1GeKEjpZGwUxFrhPKSRxxTloUCRkdUdJf/view?usp=sharing">
+            Resume/CV
+          </Link>
         </button>
       </ul>
     </div>

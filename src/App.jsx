@@ -75,7 +75,7 @@ function App() {
       onMouseMove={getMouseData}
       onMouseLeave={MouseLeave}
     >
-      <div className="circle hidden absolute w-10 rounded-full h-10 border border-red-600 left-0 lg:inline-flex justify-center items-center text-[3.25rem] pb-[37px] text-red-600 z-[60] pointer-events-none">
+      <div className="circle hidden absolute w-10 rounded-full h-10 border border-red-600 left-0 lg:inline-flex justify-center items-center text-[3.25rem] pb-[37px] 2xl:w-14 2xl:h-14 text-red-600 z-[60] pointer-events-none">
         .
       </div>
       <div className="w-full flex flex-col items-center">

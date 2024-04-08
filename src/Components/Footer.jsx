@@ -10,8 +10,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black w-screen h-auto px-4 py-1 mt-2  border-b border-b-[#dadada]  flex flex-col gap-3">
-      <div className="w-full h-auto px-4 py-1 mt-2 grid grid-cols-2 gap-3  md:grid-cols-3 lg:grid-cols-4">
+    <footer className="bg-black w-screen h-auto px-4 py-1 mt-2  border-b border-b-[#dadada]  flex flex-col gap-3 xl:gap-7">
+      <div className="w-full h-auto px-4 py-1 mt-2 grid grid-cols-2 gap-3  md:grid-cols-3 lg:flex lg:flex-row lg:justify-around lg:items-center">
         <div className="first text-slate-50">
           <p className=" cursor-pointer hover:text-green-600 duration-500 font-semibold text-2xl m-3">
             Useful Links
@@ -80,7 +80,7 @@ const Footer = () => {
           />
         </div>
 
-        <button className="text-slate-50 fixed bottom-10 left-[50%] z-50 animate-bounce text-5xl md:text-3xl h-8 w-8 inline-flex items-center justify-center rounded-full">
+        <button className="text-slate-50 fixed bottom-10 left-[50%] z-50 animate-bounce text-5xl md:text-3xl h-8 w-8 inline-flex items-center justify-center rounded-full 2xl:text-4xl">
           <Link onClick={scrollOnTop}>
             <FaArrowAltCircleUp />
           </Link>

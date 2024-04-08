@@ -30,12 +30,12 @@ const Project = () => {
         Projects
       </p>
 
-      <div className=" w-full h-auto flex flex-col gap-4 md:flex-row">
-        <div className=" flex flex-col gap-2">
+      <div className=" w-full h-auto flex flex-col gap-4 md:flex-row 2xl:justify-around lg:justify-between">
+        <div className=" flex flex-col gap-2 lg:max-w-[65%] ">
           <h1 className="text-4xl text-slate-50 py-1 font-semibold">
             Projects : -
           </h1>
-          <ul className="text-slate-50 projul">
+          <ul className="text-slate-50 projul ">
             <li className="my-3 hover:text-red-600 duration-300  cursor-pointer whitespace-normal break-words">
               <Link to="https://github.com/Yuvraj9769/Amazon_clone-using-Tailwind-CSS">
                 https://github.com/Yuvraj9769/Amazon_clone-using-Tailwind-CSS
@@ -73,7 +73,7 @@ const Project = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-2 text-slate-50">
+        <div className="flex flex-col gap-2 text-slate-50 lg:pr-4">
           <h1 className="text-4xl py-1 font-semibold">Live Projects : -</h1>
           <ul className="projul">
             <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">

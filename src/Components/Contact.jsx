@@ -32,15 +32,15 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="px-4 py-2 w-full h-auto flex flex-col gap-3 my-3">
+    <div className="px-4 py-2 w-full h-auto flex flex-col gap-3 my-3 xl:gap-7">
       <p className="text-slate-50 relative text-xl text-center before:absolute before:bg-[#dadada] before:h-1 before:w-[35%] before:top-[50%] before:left-0 xl:after:h-[2px] xl:before:h-[2px]  after:absolute after:bg-[#dadada] after:h-1 after:w-[35%] after:top-[50%] after:right-0 xl:text-2xl">
         Contact
       </p>
-      <div className="w-full sctrigger h-auto flex flex-col gap-5 pt-2 pb-1 lg:flex-row flex-wrap md:justify-around items-center xl:grid xl:grid-cols-2 lg:justify-start md:gap-7">
+      <div className="w-full sctrigger  h-auto flex flex-col gap-5 pt-2 pb-1 justify-between lg:flex-row flex-wrap items-center xl:grid xl:grid-cols-2 md:gap-7 2xl:flex 2xl:flex-row 2xl:justify-around">
         <h1 className="contacth1 text-3xl text-slate-50 font-semibold md:w-[30vw] md:text-5xl text-center xl:text-start">
           Let's Get in touch!
         </h1>
-        <form className="w-full flex flex-col items-center gap-5 md:w-[65%] max-w-[600px] border border-[#dadada] px-4 py-3 rounded-lg">
+        <form className="w-full flex flex-col items-center gap-5 md:w-[65%] max-w-[600px] border border-[#dadada] px-4 py-3 rounded-lg lg:mx-auto">
           <input
             type="text"
             placeholder="Full Name"

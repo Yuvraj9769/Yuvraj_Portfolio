@@ -7,9 +7,11 @@ const Navbar = () => {
   const [Siderbarvisible, setSiderbar] = useState(false);
 
   return (
-    <nav className="bg-black w-full box-border sticky top-0 border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-8 md:pb-3 flex md:justify-around items-center justify-between px-2">
-      <h1 className="navh1 text-slate-50 text-4xl font-semibold">Yuvraj</h1>
-      <ul className="ul md:flex w-[600px] text-slate-50 justify-between items-center text-lg hidden">
+    <nav className="bg-black w-full box-border sticky top-0 border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-8 md:pb-3 flex items-center justify-between px-2">
+      <h1 className="navh1 text-slate-50 text-4xl font-semibold md:px-6">
+        Yuvraj
+      </h1>
+      <ul className="ul md:flex w-[600px] text-slate-50 justify-between 2xl:w-[55%] items-center text-lg hidden md:px-6">
         <li>
           <NavLink
             to="/"

@@ -12,7 +12,6 @@ body::-webkit-scrollbar{
 }
 
 body{
-    font-family: cursive;
     overflow: scroll;
     background-color: black;
 }

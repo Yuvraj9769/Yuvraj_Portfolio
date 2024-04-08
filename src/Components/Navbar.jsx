@@ -1,30 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Sidebar from "./Sidebar";
-import gsap from "gsap";
 
 const Navbar = () => {
-  useEffect(() => {
-    let tl = gsap.timeline();
-
-    gsap.set(["nav h1", "nav .ul li", "nav .ul button"], {
-      y: -80,
-    });
-
-    tl.to(["nav h1", "nav .ul li", "nav .ul button"], {
-      y: 0,
-      delay: 0.5,
-      stagger: 0.4,
-    });
-  }, []);
-
   const [Siderbarvisible, setSiderbar] = useState(false);
 
   return (
-    <nav className="bg-black w-screen box-border sticky top-0 border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-8 md:pb-3 flex md:justify-around items-center justify-between px-2">
-      <h1 className="text-slate-50 text-4xl font-semibold">Yuvraj</h1>
-      <ul className="ul md:flex w-[600px] text-slate-50 justify-between items-center text-lg hidden">
+    <nav className="bg-black w-full box-border sticky top-0 border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-8 md:pb-3 flex items-center justify-between px-2">
+      <h1 className="navh1 text-slate-50 text-4xl font-semibold md:px-6">
+        Yuvraj
+      </h1>
+      <ul className="ul md:flex w-[600px] text-slate-50 justify-between 2xl:w-[55%] items-center text-lg hidden md:px-6">
         <li>
           <NavLink
             to="/"
@@ -75,8 +62,10 @@ const Navbar = () => {
             Skills
           </NavLink>
         </li>
-        <button className="border border-[#dadada] rounded px-4 py-2 transition-all hover:bg-slate-50 hover:text-red-600 duration-700">
-          <Link to="./public/Yuvraj Salte (1) - Copy.pdf">Resume/CV</Link>
+        <button className="navbtn border border-[#dadada] rounded px-4 py-2 transition-all hover:bg-slate-50 hover:text-red-600 duration-700">
+          <Link to="https://drive.google.com/file/d/1GeKEjpZGwUxFrhPKSRxxTloUCRkdUdJf/view?usp=sharing">
+            Resume/CV
+          </Link>
         </button>
       </ul>
       <Sidebar Siderbarvisible={Siderbarvisible} setSiderbar={setSiderbar} />

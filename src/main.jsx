@@ -10,33 +10,33 @@ import Contact from "./Components/Contact.jsx";
 import Skills from "./Components/Skills.jsx";
 import ErrorMsg from "./Components/ErrorMsg.jsx";
 import Skillsdata from "./Components/Skillsdata.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import Footer from "./Components/Footer.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [
-      {
-        path: "/Home",
-        element: <App />,
-      },
-      {
-        path: "/AboutMe",
-        element: <Aboutme />,
-      },
-      {
-        path: "/Project",
-        element: <Project />,
-      },
-      {
-        path: "/Contact",
-        element: <Contact />,
-      },
-      {
-        path: "/Skills",
-        element: <Skills />,
-      },
-    ],
+  },
+  {
+    path: "/Home",
+    element: <App />,
+  },
+  {
+    path: "/AboutMe",
+    element: [<Navbar />, <Aboutme />, <Footer />],
+  },
+  {
+    path: "/Project",
+    element: [<Navbar />, <Project />, <Footer />],
+  },
+  {
+    path: "/Contact",
+    element: [<Navbar />, <Contact />, <Footer />],
+  },
+  {
+    path: "/Skills",
+    element: [<Navbar />, <Skills />, <Footer />],
   },
   {
     path: "*",

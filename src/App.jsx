@@ -24,7 +24,6 @@ function App() {
 
     gsap.set([".navh1", "nav .ul li", ".navbtn"], {
       y: -100,
-      opacity: 0,
     });
 
     tl.to([".navh1", "nav .ul li", ".navbtn"], {

@@ -82,6 +82,16 @@ const Project = () => {
               </Link>
             </li>
             <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">
+              <Link to="https://yuvicalendly.netlify.app/">
+                https://yuvicalendly.netlify.app/
+              </Link>
+            </li>
+            <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">
+              <Link to="https://yuvifoodrecipe.netlify.app/">
+                https://yuvifoodrecipe.netlify.app/
+              </Link>
+            </li>
+            <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">
               <Link to="https://flipkartshopping.netlify.app/">
                 https://flipkartshopping.netlify.app/
               </Link>
@@ -94,6 +104,11 @@ const Project = () => {
             <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">
               <Link to="https://yuvraj9769.github.io/Landing_page/">
                 https://yuvraj9769.github.io/Landing_page/
+              </Link>
+            </li>
+            <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">
+              <Link to="https://yuvitodo.netlify.app/">
+                https://yuvitodo.netlify.app
               </Link>
             </li>
           </ul>

@@ -11,7 +11,7 @@ const Skills = () => {
       <div className="w-full flex flex-col md:flex-row md:flex-wrap gap-6 xl:gap-8 2xl:gap-10 items-center md:justify-center py-3 px-2 ">
         {skilldataInfo.map((e) => (
           <div
-            className="px-4 py-3 rounded-lg shadow-md shadow-gray-700 flex flex-col items-center justify-between  border hover:cursor-pointer hover:scale-95 duration-500 w-[280px] h-[465px] xl:gap-5 border-[#dadada] lg:py-1 lg:h-[430px]"
+            className="px-4 py-3 rounded-lg shadow-md shadow-gray-700 flex flex-col items-center justify-between  border hover:cursor-pointer hover:scale-95 duration-500 w-[280px] h-[465px] xl:gap-5 border-[#dadada] lg:py-4 lg:h-[460px]"
             key={e.id}
           >
             <img

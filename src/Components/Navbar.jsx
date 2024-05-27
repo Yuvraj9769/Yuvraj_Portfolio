@@ -62,7 +62,7 @@ const Navbar = () => {
             Skills
           </NavLink>
         </li>
-        <button className="navbtn border border-[#dadada] rounded px-4 py-2 transition-all hover:bg-slate-50 hover:text-red-600 duration-700">
+        <button className="navbtn border border-[#dadada] rounded px-4 py-2 transition-colors hover:bg-slate-50 hover:text-red-600 duration-700">
           <Link to="https://drive.google.com/file/d/1GeKEjpZGwUxFrhPKSRxxTloUCRkdUdJf/view?usp=sharing">
             Resume/CV
           </Link>

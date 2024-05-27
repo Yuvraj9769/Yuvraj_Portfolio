@@ -32,7 +32,7 @@ const Project = () => {
 
       <div className=" w-full h-auto flex flex-col gap-4 md:flex-row 2xl:justify-around lg:justify-between">
         <div className=" flex flex-col gap-2 lg:max-w-[65%] ">
-          <h1 className="text-4xl text-slate-50 py-1 font-semibold">
+          <h1 className="text-4xl py-1 font-semibold text-red-600">
             Projects : -
           </h1>
           <ul className="text-slate-50 projul ">
@@ -74,7 +74,9 @@ const Project = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-2 text-slate-50 lg:pr-4">
-          <h1 className="text-4xl py-1 font-semibold">Live Projects : -</h1>
+          <h1 className="text-4xl py-1 font-semibold text-green-600">
+            Live Projects : -
+          </h1>
           <ul className="projul">
             <li className="my-3 hover:text-green-600 duration-300  cursor-pointer whitespace-normal break-words">
               <Link to="https://letsspotify.freewebhostmost.com/">

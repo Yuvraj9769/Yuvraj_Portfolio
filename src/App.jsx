@@ -24,11 +24,13 @@ function App() {
 
     gsap.set([".navh1", "nav .ul li", ".navbtn"], {
       y: -100,
+      opacity: 0,
     });
 
     tl.to([".navh1", "nav .ul li", ".navbtn"], {
       y: 0,
       delay: 0.2,
+      opacity: 1,
       stagger: 0.2,
     });
 

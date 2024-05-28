@@ -12,6 +12,8 @@ import ErrorMsg from "./Components/ErrorMsg.jsx";
 import Skillsdata from "./Components/Skillsdata.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
+import skillsContext from "./store/ContextApi.jsx";
+import { skilldataInfo, projectDataInfo } from "./store/dataProvider.js";
 
 const router = createBrowserRouter([
   {
@@ -43,13 +45,15 @@ const router = createBrowserRouter([
     element: <ErrorMsg />,
   },
   {
-    path: "/Skills/:id",
+    path: "/Skills/:ind",
     element: <Skillsdata />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <skillsContext.Provider value={{ skilldataInfo, projectDataInfo }}>
+      <RouterProvider router={router}></RouterProvider>
+    </skillsContext.Provider>
   </React.StrictMode>
 );

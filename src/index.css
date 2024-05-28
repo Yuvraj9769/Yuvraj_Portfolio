@@ -15,3 +15,15 @@ body{
     overflow: scroll;
     background-color: black;
 }
+
+.slick-slide > div{
+    margin: 0px 10px;
+}
+
+.slick-arrow::before {
+    font-size: 24px;
+  }
+
+  .slick-dots li button:before,.slick-dots li.slick-active button:before{
+    color: white;
+  }

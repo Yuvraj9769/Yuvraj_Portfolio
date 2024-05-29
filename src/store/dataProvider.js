@@ -212,69 +212,69 @@ export const skilldataInfo = [
 
 export const projectDataInfo = [
   {
-    img: "../public/spotify.png",
+    img: "./spotify.png",
     github: "https://github.com/Yuvraj9769/Spotify_Clone",
     liveLink: "https://letsspotify.freewebhostmost.com/",
     title: "Spotify",
   },
   {
-    img: "../public/calendly.png",
+    img: "./calendly.png",
     github: "https://github.com/Yuvraj9769/Aeonaxy_Task/tree/main/src",
     liveLink: "https://yuvicalendly.netlify.app/",
     title: "Calendly",
   },
   {
-    img: "../public/wow.png",
+    img: "./wow.png",
     github: "https://github.com/Yuvraj9769/Wow-clone",
     liveLink: "https://yuvraj9769.github.io/Wow-clone/",
     title: "Wow",
   },
   {
-    img: "../public/foodRecipy.png",
+    img: "./foodRecipy.png",
     github: "https://github.com/Yuvraj9769/Food_Recipe_Redux/tree/main/src",
     liveLink: "https://yuvifoodrecipe.netlify.app/",
     title: "FoodRecipy",
   },
   {
-    img: "../public/netFlixSS.png",
+    img: "./netFlixSS.png",
     github: "https://github.com/Yuvraj9769/Netflix-clone-reactjs/tree/main/src",
     liveLink: false,
     title: "NetFlix",
   },
   {
-    img: "../public/landingPage.png",
+    img: "./landingPage.png",
     github: "https://github.com/Yuvraj9769/Landing_page",
     liveLink: "https://yuvraj9769.github.io/Landing_page/",
     title: "LandingPage",
   },
   {
-    img: "../public/myntraSS.png",
+    img: "./myntraSS.png",
     github: "https://github.com/Yuvraj9769/Myntra_Clone/tree/main/src",
     liveLink: false,
     title: "Myntra",
   },
   {
-    img: "../public/flipkartSS.png",
+    img: "./flipkartSS.png",
     github:
       "https://github.com/Yuvraj9769/Flipkart-Clone-Using-Html-Tailwind-css-and-Javascript/tree/main/src",
     liveLink: false,
     title: "Flipkart",
   },
   {
-    img: "../public/chainTechSS.png",
+    img: "./chainTechSS.png",
     github: "https://github.com/Yuvraj9769/ChainTech-_Network",
     liveLink: false,
     title: "ChainTech",
   },
   {
-    img: "../public/amazonSS.png",
+    img: "./amazonSS.png",
     github:
       "https://github.com/Yuvraj9769/Amazon_clone-using-Tailwind-CSS/blob/main/dist/amazonclone.html",
     liveLink: false,
     title: "Amazon",
   },
   {
-    img: "../public/backendSS.png",
+    img: "./backendSS.png",
     github: "https://github.com/Yuvraj9769/Learning_Backend/tree/main/src",
     liveLink: false,
     title: "backend",

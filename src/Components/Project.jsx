@@ -34,7 +34,7 @@ const Project = () => {
       scrollTrigger: {
         trigger: ".project-container >  .card",
         scroller: "body",
-        start: "top",
+        start: "top 46%",
         toggleActions: "restart none none none",
       },
     });

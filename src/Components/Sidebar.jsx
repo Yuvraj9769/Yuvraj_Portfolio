@@ -13,7 +13,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
         <div className="flex justify-between items-center w-full border-b border-[#dadada] pb-6">
           <h1 className="text-slate-50 text-4xl font-semibold">Yuvraj</h1>
           <p
-            className="text-4xl text-red-600"
+            className="text-3xl text-red-600"
             onClick={() => setSiderbar(!Siderbarvisible)}
           >
             <ImCancelCircle />

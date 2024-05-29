@@ -14,6 +14,8 @@ import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
 import skillsContext from "./store/ContextApi.jsx";
 import { skilldataInfo, projectDataInfo } from "./store/dataProvider.js";
+import WrapperForProject from "./Components/WrapperForProject.jsx";
+import WrapperForRouting from "./Components/WrapperForRouting.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,19 +28,37 @@ const router = createBrowserRouter([
   },
   {
     path: "/AboutMe",
-    element: [<Navbar />, <Aboutme />, <Footer />],
+    element: (
+      <WrapperForRouting>
+        <Aboutme />
+      </WrapperForRouting>
+    ),
   },
   {
     path: "/Project",
-    element: [<Navbar />, <Project />, <Footer />],
+    element: (
+      <WrapperForRouting>
+        <WrapperForProject>
+          <Project />
+        </WrapperForProject>
+      </WrapperForRouting>
+    ),
   },
   {
     path: "/Contact",
-    element: [<Navbar />, <Contact />, <Footer />],
+    element: (
+      <WrapperForRouting>
+        <Contact />
+      </WrapperForRouting>
+    ),
   },
   {
     path: "/Skills",
-    element: [<Navbar />, <Skills />, <Footer />],
+    element: (
+      <WrapperForRouting>
+        <Skills />
+      </WrapperForRouting>
+    ),
   },
   {
     path: "*",

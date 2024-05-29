@@ -17,13 +17,13 @@ function App() {
       opacity: 0,
     });
 
-    gsap.set(".webdiv > *", {
-      x: 500,
+    gsap.set([".navh1", "nav .ul li", ".navbtn"], {
+      y: -100,
       opacity: 0,
     });
 
-    gsap.set([".navh1", "nav .ul li", ".navbtn"], {
-      y: -100,
+    gsap.set(".webdiv > *", {
+      x: 500,
       opacity: 0,
     });
 
@@ -35,6 +35,7 @@ function App() {
     });
 
     tl.to(".webdiv > *", {
+      display: "block",
       x: 0,
       duration: 0.5,
       stagger: 0.5,
@@ -73,7 +74,7 @@ function App() {
 
   return (
     <div
-      className="w-screen flex relative justify-center items-center"
+      className="w-screen flex relative justify-center items-center overflow-hidden"
       onMouseMove={getMouseData}
       onMouseLeave={MouseLeave}
     >

@@ -74,12 +74,20 @@ const Contact = () => {
 
         <div className="px-3 py-1 text-slate-50 text-4xl flex items-center gap-7 lg:mx-0">
           <button className="hover:text-red-600 duration-300">
-            <Link to="https://github.com/Yuvraj9769">
+            <Link
+              to="https://github.com/Yuvraj9769"
+              target="_blank"
+              rel="noopener noreferre"
+            >
               <BsGithub />
             </Link>
           </button>
           <button className="hover:text-red-600 duration-300">
-            <Link to="https://www.linkedin.com/in/yuvraj-salte-1b0a96270/">
+            <Link
+              to="https://www.linkedin.com/in/yuvraj-salte-1b0a96270/"
+              target="_blank"
+              rel="noopener noreferre"
+            >
               <FaLinkedin />
             </Link>
           </button>
@@ -87,7 +95,11 @@ const Contact = () => {
             <MdEmail />
           </button>
           <button className="hover:text-red-600 duration-300">
-            <Link to="https://instagram.com/mr_yuvi005">
+            <Link
+              to="https://instagram.com/mr_yuvi005"
+              target="_blank"
+              rel="noopener noreferre"
+            >
               <FaInstagramSquare />
             </Link>
           </button>

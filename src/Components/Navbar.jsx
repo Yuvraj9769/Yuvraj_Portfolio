@@ -20,7 +20,7 @@ const Navbar = () => {
       <h1 className="navh1 text-slate-50 text-4xl font-semibold md:px-6">
         Yuvraj
       </h1>
-      <ul className="ul md:flex w-[600px] text-slate-50 justify-between 2xl:w-[55%] items-center text-lg hidden md:px-6">
+      <ul className="ul md:flex w-[600px] text-slate-50 justify-between 2xl:w-[30%] items-center text-lg hidden md:px-6">
         {navListArr.map((e) => (
           <li key={e.id}>
             <NavLink
@@ -35,7 +35,7 @@ const Navbar = () => {
         ))}
         <button className="navbtn border border-[#dadada] rounded px-4 py-2 transition-colors hover:bg-slate-50 hover:text-red-600 duration-700">
           <Link
-            to="https://drive.google.com/file/d/1GeKEjpZGwUxFrhPKSRxxTloUCRkdUdJf/view?usp=sharing"
+            to="https://drive.google.com/file/d/1De1Rop8AhfgGD0bQ-QQ1v-K13H9GDYVt/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +46,7 @@ const Navbar = () => {
       <Sidebar Siderbarvisible={Siderbarvisible} setSiderbar={setSiderbar} />
       <button
         onClick={() => setSiderbar(!Siderbarvisible)}
-        className="md:hidden text-red-600 text-2xl border border-[#dadada] rounded px-2 py-1"
+        className="md:hidden text-red-600 text-xl border border-[#dadada] rounded px-2 py-1"
       >
         <FaBarsStaggered />
       </button>

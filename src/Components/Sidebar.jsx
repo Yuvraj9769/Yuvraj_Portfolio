@@ -5,8 +5,8 @@ import { ImCancelCircle } from "react-icons/im";
 const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
   return (
     <div
-      className={`siderbar flex flex-col gap-[35px] md:hidden bg-black transition-left  duration-1000 text-2xl absolute top-0 h-screen w-screen ${
-        Siderbarvisible ? "left-[0%] z-10 fixed" : "left-[-110%]"
+      className={`siderbar flex flex-col gap-[35px] md:hidden bg-black transition-left  duration-1000 text-2xl fixed top-0 h-screen w-screen ${
+        Siderbarvisible ? "left-[0%] z-50" : "left-[-110%]"
       }`}
     >
       <div className="px-4 py-3 flex justify-center items-center">
@@ -20,7 +20,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
           </p>
         </div>
       </div>
-      <ul className="flex px-[1.2rem] sm:flex-row w-full min-h-[300px] flex-col text-slate-50 justify-between items-start text-[22px]">
+      <ul className="flex px-[1.2rem] sm:flex-row w-full min-h-[300px] flex-col text-slate-50 justify-between items-start text-lg">
         <li>
           <NavLink
             to="/"

@@ -212,6 +212,12 @@ export const skilldataInfo = [
 
 export const projectDataInfo = [
   {
+    img: "./Inkpot.png",
+    github: false,
+    liveLink: "https://inkpot-digital.vercel.app/",
+    title: "Inkpot Digital",
+  },
+  {
     img: "./spotify.png",
     github: "https://github.com/Yuvraj9769/Spotify_Clone",
     liveLink: "https://letsspotify.freewebhostmost.com/",

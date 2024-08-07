@@ -62,23 +62,23 @@ const Project = () => {
                   {e.title}
                 </h3>
                 <div className="project-buttons flex flex-col gap-4 text-center">
-                  <Link
-                    to={e.github}
+                  <a
+                    href={e.github || "#"}
                     target="_blank"
                     rel="noopener noreferre"
                     className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-lg flex justify-center items-center hover:bg-blue-600 transition-colors"
                   >
-                    <FaGithub className="mr-2" />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={e.liveLink ? e.liveLink : e.github}
+                    {e.github && <FaGithub className="mr-2" />}
+                    {e.github ? " View on GitHub" : "Internship Project"}
+                  </a>
+                  <a
+                    href={e.liveLink ? e.liveLink : e.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors"
                   >
                     {e.liveLink ? "Visit Site" : "View Code"}
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -102,23 +102,23 @@ const Project = () => {
                 {e.title}
               </h3>
               <div className="project-buttons flex flex-col gap-4 text-center">
-                <Link
-                  to={e.github}
+                <a
+                  href={e.github || "#"}
                   target="_blank"
-                  rel="noopener noreferre"
+                  rel="noopener noreferrer"
                   className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-lg flex justify-center items-center hover:bg-blue-600 transition-colors"
                 >
-                  <FaGithub className="mr-2" />
-                  View on GitHub
-                </Link>
-                <Link
-                  to={e.liveLink ? e.liveLink : e.github}
+                  {e.github && <FaGithub className="mr-2" />}
+                  {e.github ? "View on GitHub" : "Internship Project"}
+                </a>
+                <a
+                  href={e.liveLink ? e.liveLink : e.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-pointer bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors"
                 >
                   {e.liveLink ? "Visit Site" : "View Code"}
-                </Link>
+                </a>
               </div>
             </div>
           </div>

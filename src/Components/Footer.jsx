@@ -1,5 +1,4 @@
 import { FaArrowAltCircleUp } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollOnTop = () => {
@@ -81,7 +80,7 @@ const Footer = () => {
         </div>
       </div>
       <button
-        className="fixed bottom-10 z-50 animate-bounce text-4xl md:text-3xl h-10 w-10 rounded-full duration-0"
+        className="fixed bottom-10 z-40 animate-bounce text-4xl md:text-3xl h-10 w-10 rounded-full duration-0"
         onClick={scrollOnTop}
       >
         <FaArrowAltCircleUp className="text-slate-50" />

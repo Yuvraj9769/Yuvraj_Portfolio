@@ -92,7 +92,13 @@ const Contact = () => {
             </Link>
           </button>
           <button className="hover:text-red-600 duration-300">
-            <MdEmail />
+            <Link
+              to="mailto:yuvisalte1@gmail.com"
+              target="_blank"
+              rel="noopener noreferre"
+            >
+              <MdEmail />
+            </Link>
           </button>
           <button className="hover:text-red-600 duration-300">
             <Link

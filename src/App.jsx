@@ -4,9 +4,10 @@ import Info from "./Components/Info";
 import Navbar from "./Components/Navbar";
 import Aboutme from "./Components/Aboutme";
 import Project from "./Components/Project";
-import Contact from "./Components/Contact";
 import Skills from "./Components/Skills";
 import { useEffect } from "react";
+import Experience from "./Components/Experience";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function App() {
     });
 
     gsap.set(".webdiv > *", {
-      x: 500,
+      x: -500,
       opacity: 0,
     });
 
@@ -31,14 +32,14 @@ function App() {
       y: 0,
       delay: 0.2,
       opacity: 1,
-      stagger: 0.2,
+      stagger: 0.1,
     });
 
     tl.to(".webdiv > *", {
       display: "block",
       x: 0,
-      duration: 0.5,
-      stagger: 0.5,
+      duration: 0.3,
+      stagger: 0.3,
       opacity: 1,
     });
 
@@ -66,7 +67,7 @@ function App() {
     });
   };
 
-  let MouseLeave = (e) => {
+  let MouseLeave = () => {
     const circle = document.querySelector(".circle");
     circle.style.opacity = 0;
     circle.style.scale = 0;
@@ -74,7 +75,7 @@ function App() {
 
   return (
     <div
-      className="w-screen flex relative justify-center items-center overflow-hidden"
+      className="w-screen flex justify-center items-center"
       onMouseMove={getMouseData}
       onMouseLeave={MouseLeave}
     >
@@ -86,9 +87,10 @@ function App() {
         <div className="w-[95%] flex flex-col items-center gap-1">
           <Info />
           <Aboutme />
+          <Experience />
           <Project />
           <Skills />
-          <Contact />
+          <Toaster />
         </div>
         <Footer />
       </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Aboutme = () => {
   return (
     <div className="w-full h-auto px-2 py-1 my-5 flex flex-col gap-3 ">

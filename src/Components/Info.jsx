@@ -8,6 +8,7 @@ const Info = () => {
         strings: [
           "Web Developer",
           "MERN Stack",
+          "Next JS",
           "Full Stack",
           "Data Science",
           "Responsive Design",
@@ -15,7 +16,7 @@ const Info = () => {
         autoStart: true,
         loop: true,
       });
-    }, 2500);
+    }, 2000);
   }, []);
 
   return (
@@ -27,18 +28,21 @@ const Info = () => {
               className="md:text-4xl text-2xl text-nowrap text-slate-50 font-[400]"
               id="text-writer"
             ></h1>
-            <img src="https://porichiti.vercel.app/img/arrow-icon.png" alt="" />
+            <img
+              src="https://porichiti.vercel.app/img/arrow-icon.png"
+              alt="arrow-img"
+            />
           </div>
           <h1 className="infoname text-7xl md:text-[125px] text-slate-50 font-semibold">
-            I'm Yuvraj Salte
+            I&apos;m Yuvraj Salte
           </h1>
         </div>
         <div className="imgdiv md:h-full relative inline-flex justify-center items-center before:content-[''] before:bg-red-600 before:rounded-sm before:h-7 before:w-7 before:absolute before:left-3 before:top-16 before:animate-spin-slow after:bg-slate-50 after:h-5 after:w-5 after:absolute after:rounded-sm after:left-7 after:top-28 after:animate-spin-slow">
           <img
-            className=" rounded-xl px-2 py-2 border border-[#dadada]"
+            className=" rounded-xl px-2 py-2 border border-[#dadada] max-w-[332px] max-h-[330px]"
             // src="./public/YuviIMG-removebg-preview.png"   for localhost
             src="./YuviIMG-removebg-preview.png" // for server on netlify
-            alt=""
+            alt="picture"
           />
         </div>
       </div>

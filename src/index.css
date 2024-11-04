@@ -1,29 +1,29 @@
 @tailwind base;
 @tailwind components;
-@tailwind  utilities;
+@tailwind utilities;
 
-
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.scrnone::-webkit-scrollbar{
-    display: none;
+.scrnone::-webkit-scrollbar {
+  display: none;
 }
 
-body{
-    overflow: scroll;
-    background-color: black;
+body {
+  overflow: scroll;
+  background-color: black;
 }
 
-.slick-slide > div{
-    margin: 0px 10px;
+.slick-slide > div {
+  margin: 0px 10px;
 }
 
 .slick-arrow::before {
-    font-size: 24px;
-  }
+  font-size: 24px;
+}
 
-  .slick-dots li button:before,.slick-dots li.slick-active button:before{
-    color: white;
-  }
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: white;
+}

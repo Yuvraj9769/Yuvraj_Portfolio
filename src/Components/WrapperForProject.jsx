@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const WrapperForProject = ({ children }) => {
   return (
@@ -6,6 +6,10 @@ const WrapperForProject = ({ children }) => {
       {children}
     </div>
   );
+};
+
+WrapperForProject.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default WrapperForProject;

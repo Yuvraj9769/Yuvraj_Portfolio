@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Sidebar from "./Sidebar";
@@ -10,23 +10,25 @@ const Navbar = () => {
   const navListArr = [
     { id: nanoid(), name: "Home", path: "/" },
     { id: nanoid(), name: "About Me", path: "/AboutMe" },
+    { id: nanoid(), name: "Experiences", path: "/Experiences" },
     { id: nanoid(), name: "Projects", path: "/Project" },
-    { id: nanoid(), name: "Contact", path: "/contact" },
     { id: nanoid(), name: "Skills", path: "/Skills" },
   ];
 
   return (
-    <nav className="bg-black w-full box-border border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-8 md:pb-3 flex items-center justify-between px-2">
+    <nav className="bg-black w-full box-border border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-4 md:pb-3 flex items-center justify-between px-2 sticky top-0">
       <h1 className="navh1 text-slate-50 text-4xl font-semibold md:px-6">
         Yuvraj
       </h1>
-      <ul className="ul md:flex w-[600px] text-slate-50 justify-between 2xl:w-[30%] items-center text-lg hidden md:px-6">
+      <ul className="ul md:flex w-[650px] text-slate-50 justify-between 2xl:w-[40%] max-w-[650px] items-center text-lg hidden md:px-6">
         {navListArr.map((e) => (
           <li key={e.id}>
             <NavLink
               to={e.path}
               className={(e) => {
-                return e.isActive ? "text-red-600" : " ";
+                return `hover:text-red-600 duration-500 ${
+                  e.isActive ? "text-red-600" : " "
+                }`;
               }}
             >
               {e.name}

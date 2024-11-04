@@ -1,6 +1,6 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ImCancelCircle } from "react-icons/im";
+import PropTypes from "prop-types";
 
 const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
   return (
@@ -10,7 +10,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
       }`}
     >
       <div className="px-4 py-3 flex justify-center items-center">
-        <div className="flex justify-between items-center w-full border-b border-[#dadada] pb-6">
+        <div className="flex justify-between items-center w-full border-b border-[#dadada] pb-4">
           <h1 className="text-slate-50 text-4xl font-semibold">Yuvraj</h1>
           <p
             className="text-3xl text-red-600"
@@ -45,6 +45,17 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
         </li>
         <li>
           <NavLink
+            to="/Experiences"
+            className={(e) => {
+              return e.isActive ? "text-red-600" : " ";
+            }}
+            onClick={() => setSiderbar(!Siderbarvisible)}
+          >
+            Experiences
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/Project"
             className={(e) => {
               return e.isActive ? "text-red-600" : " ";
@@ -54,17 +65,7 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
             Projects
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/Contact"
-            className={(e) => {
-              return e.isActive ? "text-red-600" : " ";
-            }}
-            onClick={() => setSiderbar(!Siderbarvisible)}
-          >
-            Contact
-          </NavLink>
-        </li>
+
         <li>
           <NavLink
             to="/Skills"
@@ -87,6 +88,11 @@ const Sidebar = ({ Siderbarvisible, setSiderbar }) => {
       </ul>
     </div>
   );
+};
+
+Sidebar.propTypes = {
+  Siderbarvisible: PropTypes.bool.isRequired,
+  setSiderbar: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

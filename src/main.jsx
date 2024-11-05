@@ -8,7 +8,6 @@ import Aboutme from "./Components/Aboutme.jsx";
 import Project from "./Components/Project.jsx";
 import Skills from "./Components/Skills.jsx";
 import ErrorMsg from "./Components/ErrorMsg.jsx";
-import Skillsdata from "./Components/Skillsdata.jsx";
 import skillsContext from "./store/ContextApi.jsx";
 import { skilldataInfo, projectDataInfo } from "./store/dataProvider.js";
 import WrapperForProject from "./Components/WrapperForProject.jsx";
@@ -62,10 +61,6 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <ErrorMsg />,
-  },
-  {
-    path: "/Skills/:ind",
-    element: <Skillsdata />,
   },
 ]);
 

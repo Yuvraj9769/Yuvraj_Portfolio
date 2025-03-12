@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect/dist/core";
 
 const Info = () => {
   useEffect(() => {
-    setTimeout(() => {
+    const timeOut = setTimeout(() => {
       new Typewriter("#text-writer", {
         strings: [
           "Web Developer",
@@ -16,7 +16,11 @@ const Info = () => {
         autoStart: true,
         loop: true,
       });
-    }, 2000);
+    }, 500);
+
+    return () => {
+      clearTimeout(timeOut);
+    };
   }, []);
 
   return (
@@ -37,7 +41,7 @@ const Info = () => {
             I&apos;m Yuvraj Salte
           </h1>
         </div>
-        <div className="imgdiv md:h-full relative inline-flex justify-center items-center before:content-[''] before:bg-red-600 before:rounded-sm before:h-7 before:w-7 before:absolute before:left-3 before:top-16 before:animate-spin-slow after:bg-slate-50 after:h-5 after:w-5 after:absolute after:rounded-sm after:left-7 after:top-28 after:animate-spin-slow">
+        <div className="imgdiv md:h-full relative inline-flex justify-center items-center before:content-[''] before:bg-red-600 before:rounded-sm before:h-7 before:w-7 before:absolute sm:before:left-3 sm:before:top-16 before:animate-spin-slow after:bg-slate-50 after:h-5 after:w-5 after:absolute after:rounded-sm sm:after:left-7 sm:after:top-28 after:animate-spin-slow before:left-6 after:left-[27px] before:top-6 after:top-[75px]">
           <img
             className=" rounded-xl px-2 py-2 border border-[#dadada] max-w-[332px] max-h-[330px]"
             // src="./public/YuviIMG-removebg-preview.png"   for localhost

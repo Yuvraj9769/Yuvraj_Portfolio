@@ -18,21 +18,9 @@ function App() {
       opacity: 0,
     });
 
-    gsap.set([".navh1", "nav .ul li", ".navbtn"], {
-      y: -100,
-      opacity: 0,
-    });
-
     gsap.set(".webdiv > *", {
       x: -500,
       opacity: 0,
-    });
-
-    tl.to([".navh1", "nav .ul li", ".navbtn"], {
-      y: 0,
-      delay: 0.2,
-      opacity: 1,
-      stagger: 0.1,
     });
 
     tl.to(".webdiv > *", {

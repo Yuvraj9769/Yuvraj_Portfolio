@@ -50,7 +50,7 @@ const Footer = () => {
         <FaAngleUp className="text-slate-50" />
       </button>
 
-      <p className="text-slate-50 text-base md:text-lg font-semibold text-center">
+      <p className="text-slate-50 text-base md:text-lg font-semibold text-center mt-5">
         Copyright &copy; Yuvraj Salte 2024 All rights reserved
       </p>
     </footer>

@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "slick-carousel/slick/slick.css";
@@ -12,12 +12,33 @@ gsap.registerPlugin(ScrollTrigger);
 const Project = () => {
   const { projectDataInfo } = useContext(ContextApi);
 
-  let settings = {
+  const [settings, setSettings] = useState({
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+  });
+
+  const updateSettings = () => {
+    const width = window.innerWidth;
+    if (width >= 1500) {
+      setSettings({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      });
+    } else {
+      setSettings({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, // Show 3 slides for smaller screens
+        slidesToScroll: 1,
+      });
+    }
   };
 
   useEffect(() => {
@@ -37,11 +58,19 @@ const Project = () => {
         toggleActions: "restart none none none",
       },
     });
+
+    updateSettings();
+
+    window.addEventListener("resize", updateSettings);
+
+    return () => {
+      window.removeEventListener("resize", updateSettings);
+    };
   }, []);
 
   return (
-    <div className="w-full bg-black px-3 py-2 flex flex-col gap-3 md:gap-5 my-3">
-      <p className="relative text-slate-50 text-xl xl:text-2xl mb-2 text-center before:absolute before:bg-[#dadada] before:h-1 before:w-[35%] before:top-[50%] xl:after:h-[2px] xl:before:h-[2px] before:left-0  after:absolute after:bg-[#dadada] after:h-1 after:w-[35%] after:top-[50%] after:right-0">
+    <div className="w-full bg-black px-3 py-2 flex flex-col gap-3 md:gap-5 my-8">
+      <p className="relative text-red-600 text-xl xl:text-2xl mb-2 before:absolute before:bg-[#dadada] before:h-1 before:w-[35%] before:top-[50%] xl:after:h-[2px] xl:before:h-[2px] before:left-0  after:absolute after:bg-[#dadada] after:h-1 after:w-[35%] after:top-[50%] after:right-0 before:hidden sm:before:block after:hidden sm:after:block text-start sm:text-center">
         Projects
       </p>
 

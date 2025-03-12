@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Sidebar from "./Sidebar";
 import { nanoid } from "nanoid";
+import gsap from "gsap";
 
 const Navbar = () => {
   const [Siderbarvisible, setSiderbar] = useState(false);
@@ -15,18 +16,34 @@ const Navbar = () => {
     { id: nanoid(), name: "Skills", path: "/Skills" },
   ];
 
+  useEffect(() => {
+    let tl = gsap.timeline();
+
+    gsap.set([".navh1", "nav .ul li", ".navbtn", ".nav-ham"], {
+      y: -100,
+      opacity: 0,
+    });
+
+    tl.to([".navh1", "nav .ul li", ".navbtn", ".nav-ham"], {
+      y: 0,
+      delay: 0.2,
+      opacity: 1,
+      stagger: 0.1,
+    });
+  });
+
   return (
     <nav className="bg-black w-full box-border border-b z-50 border-b-[#dadada] md:px-1 py-3 pb-4 md:pb-3 flex items-center justify-between px-2 sticky top-0">
       <h1 className="navh1 text-slate-50 text-4xl font-semibold md:px-6">
         Yuvraj
       </h1>
-      <ul className="ul md:flex w-[650px] text-slate-50 justify-between 2xl:w-[40%] max-w-[650px] items-center text-lg hidden md:px-6">
+      <ul className="ul md:flex w-[680px] text-slate-50 justify-between 2xl:w-[40%] max-w-[690px] items-center text-lg hidden md:px-6">
         {navListArr.map((e) => (
           <li key={e.id}>
             <NavLink
               to={e.path}
               className={(e) => {
-                return `hover:text-red-600 duration-500 ${
+                return `duration-500  rounded-2xl hover:bg-red-600 hover:bg-opacity-45 hover:text-slate-50 px-3 py-1 ${
                   e.isActive ? "text-red-600" : " "
                 }`;
               }}
@@ -48,7 +65,7 @@ const Navbar = () => {
       <Sidebar Siderbarvisible={Siderbarvisible} setSiderbar={setSiderbar} />
       <button
         onClick={() => setSiderbar(!Siderbarvisible)}
-        className="md:hidden text-red-600 text-xl border border-[#dadada] rounded px-2 py-1"
+        className="md:hidden text-red-600 text-xl border border-[#dadada] rounded px-2 py-1 nav-ham"
       >
         <FaBarsStaggered />
       </button>

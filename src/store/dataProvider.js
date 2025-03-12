@@ -96,19 +96,25 @@ export const projectDataInfo = [
   {
     img: "./FoodUnity.png",
     github: "https://github.com/Yuvraj9769/FoodUnity",
-    liveLink: false,
+    liveLink: "https://food-unity.vercel.app/",
     title: "Food Unity",
   },
   {
-    img: "./Inkpot.png",
-    github: false,
+    img: "./ClientCraft.png",
+    github: "https://github.com/Yuvraj9769/ClientCraft-Nextjs",
+    liveLink: "https://client-craft-nextjs.vercel.app/login",
+    title: "CRM Project",
+  },
+  {
+    img: "./companyWebsite.png",
+    github: "https://github.com/Yuvraj9769/InkpotDigital",
     liveLink: "https://inkpot-digital.vercel.app/",
-    title: "Inkpot Digital",
+    title: "Company Project",
   },
   {
     img: "./spotify.png",
     github: "https://github.com/Yuvraj9769/Spotify_Clone",
-    liveLink: "https://letsspotify.freewebhostmost.com/",
+    liveLink: false,
     title: "Spotify",
   },
   {

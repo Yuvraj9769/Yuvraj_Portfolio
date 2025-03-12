@@ -1,7 +1,7 @@
 const Aboutme = () => {
   return (
     <div className="w-full h-auto px-2 py-1 my-5 flex flex-col gap-3 ">
-      <p className="text-red-600  relative text-xl xl:after:h-[2px] xl:before:h-[2px] text-center xl:text-2xl before:absolute before:bg-[#dadada] before:h-1 before:w-[35%] before:top-[50%] before:left-0  after:absolute after:bg-[#dadada] after:h-1 after:w-[35%] after:top-[50%] after:right-0">
+      <p className="text-red-600  relative before:hidden sm:before:block after:hidden sm:after:block text-start sm:text-center text-xl xl:after:h-[2px] xl:before:h-[2px] xl:text-2xl before:absolute before:bg-[#dadada] before:h-1 before:w-[35%] before:top-[50%] before:left-0  after:absolute after:bg-[#dadada] after:h-1 after:w-[35%] after:top-[50%] after:right-0">
         About Me
       </p>
       <div className="h-auto text-slate-50 flex flex-col gap-4 py-2">

@@ -37,13 +37,13 @@ const Navbar = () => {
       <h1 className="navh1 text-slate-50 text-4xl font-semibold md:px-6">
         Yuvraj
       </h1>
-      <ul className="ul md:flex w-[680px] text-slate-50 justify-between 2xl:w-[40%] max-w-[690px] items-center text-lg hidden md:px-6">
+      <ul className="ul md:flex w-[680px] text-slate-50 justify-between 2xl:w-[40%] max-w-[690px] items-center hidden md:px-6">
         {navListArr.map((e) => (
           <li key={e.id}>
             <NavLink
               to={e.path}
               className={(e) => {
-                return `duration-500  rounded-2xl hover:bg-red-600 hover:bg-opacity-45 hover:text-slate-50 px-3 py-1 ${
+                return `duration-500 text-base md:text-lg rounded-2xl hover:bg-red-600 hover:bg-opacity-45 hover:text-slate-50 px-3 py-1 ${
                   e.isActive ? "text-red-600" : " "
                 }`;
               }}
